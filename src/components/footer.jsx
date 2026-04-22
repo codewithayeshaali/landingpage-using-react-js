@@ -24,35 +24,37 @@ export default function Footer() {
           </div>
         </div>
       </section>
-    <div className="px-4 sm:px-10 lg:px-[124px] mb-10">
-  <div className="grid sm:grid-cols-1 sm:gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-[124px]">
-    
-    {[
-      ["Product", ["Privacy Policy", "Terms of Service", "FAQ"]],
-      ["Resources", ["Documentation", "Case Studies"]],
-      ["Company", ["About Us", "Contact Us"]],
-    ].map(([title, links]) => (
+<section className="mb-10">
+  <div className="max-w-[1245px] ml-[124px] pr-4 sm:pr-10">
+    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-[124px]">
       
-      <div key={title}>
-        <h4 className="text-base sm:text-xl font-bold text-neutral-700 mb-4">
-          {title}
-        </h4>
+      {[
+        ["Product", ["Privacy Policy", "Terms of Service", "FAQ"]],
+        ["Resources", ["Documentation", "Case Studies"]],
+        ["Company", ["About Us", "Contact Us"]],
+      ].map(([title, links]) => (
+        
+        <div key={title}>
+          <h4 className="text-base sm:text-xl font-bold text-neutral-700 mb-4">
+            {title}
+          </h4>
 
-        {links.map((l) => (
-          <a
-            key={l}
-            href="#"
-            className="block text-sm sm:text-base text-neutral-700 hover:text-blue-700 mb-3"
-          >
-            {l}
-          </a>
-        ))}
-      </div>
+          {links.map((l) => (
+            <a
+              key={l}
+              href="#"
+              className="block text-sm sm:text-base text-neutral-700 hover:text-blue-700 mb-3"
+            >
+              {l}
+            </a>
+          ))}
+        </div>
 
-    ))}
+      ))}
 
+    </div>
   </div>
-</div>
+</section>
       <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 border-t border-sky-300 pt-5 pb-6 px-4 sm:px-10 lg:px-[124px]">
         <p className="text-sm sm:text-base font-bold text-zinc-600">
           © Blue Diamond Jewelry™ 2021

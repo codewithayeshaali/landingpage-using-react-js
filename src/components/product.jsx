@@ -16,7 +16,7 @@ export default function Products({ products }) {
           ))}
         </div>
         <div className="flex justify-center mt-8">
-          <button className="bg-[#002D69] text-white text-sm font-medium rounded-sm tracking-widest uppercase px-8 py-3 hover:bg-blue-800 transition-colors duration-200">
+          <button className="bg-[#002D69] text-white text-sm font-bold rounded-sm tracking-widest uppercase px-8 py-3 hover:bg-blue-800 transition-colors duration-200">
             VIEW GALLERY
           </button>
         </div>
