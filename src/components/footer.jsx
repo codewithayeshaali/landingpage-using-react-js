@@ -3,8 +3,8 @@ import { FaFacebookF, FaInstagram, FaPinterestP, FaYelp } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-sky-200 w-full">
-      <section className="py-16 sm:py-22 px-4 sm:px-10 lg:px-[124px]">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row bg-white overflow-hidden">
+ <section className="py-16 sm:py-22 px-4 sm:px-10 lg:px-[124px]">
+   <div className="max-w-4xl mx-auto flex flex-col md:flex-row bg-white overflow-hidden">
           <img
             src="src/assets/Rectangle 31.png"
             className="w-full md:w-1/2 h-60 md:h-auto object-cover"
@@ -24,38 +24,32 @@ export default function Footer() {
           </div>
         </div>
       </section>
-<section className="mb-10">
-  <div className="max-w-[1245px] ml-[124px] pr-4 sm:pr-10">
-    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-[124px]">
-      
-      {[
-        ["Product", ["Privacy Policy", "Terms of Service", "FAQ"]],
-        ["Resources", ["Documentation", "Case Studies"]],
-        ["Company", ["About Us", "Contact Us"]],
-      ].map(([title, links]) => (
-        
-        <div key={title}>
-          <h4 className="text-base sm:text-xl font-bold text-neutral-700 mb-4">
-            {title}
-          </h4>
+<div className="w-full mb-10 px-4 sm:px-10 lg:pl-[124px]">
+  <div className="flex flex-col md:flex-row gap-10 lg:gap-41 justify-start">
+    {[
+      ["Product", ["Privacy Policy", "Terms of Service", "FAQ"]],
+      ["Resources", ["Documentation", "Case Studies"]],
+      ["Company", ["About Us", "Contact Us"]],
+    ].map(([title, links]) => (
+      <div key={title}>
+        <h4 className="text-base sm:text-xl font-bold text-neutral-700 mb-4">
+          {title}
+        </h4>
 
-          {links.map((l) => (
-            <a
-              key={l}
-              href="#"
-              className="block text-sm sm:text-base text-neutral-700 hover:text-blue-700 mb-3"
-            >
-              {l}
-            </a>
-          ))}
-        </div>
-
-      ))}
-
-    </div>
+        {links.map((l) => (
+          <a
+            key={l}
+            href="#"
+            className="block text-sm sm:text-base text-zinc-600 font-bold hover:text-blue-700 mb-3"
+          >
+            {l}
+          </a>
+        ))}
+      </div>
+    ))}
   </div>
-</section>
-      <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 border-t border-sky-300 pt-5 pb-6 px-4 sm:px-10 lg:px-[124px]">
+</div>
+  <div className="lg:pl-[124px] px-4 sm:px-10 flex flex-col sm:flex-row justify-between items-center border-t border-sky-300 pt-5 pb-6">
         <p className="text-sm sm:text-base font-bold text-zinc-600">
           © Blue Diamond Jewelry™ 2021
         </p>
