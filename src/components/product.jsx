@@ -18,7 +18,6 @@ export default function Products({ products }) {
   };
 
   useGSAP(() => {
- 
     gsap.from(titleRef.current, {
       opacity: 0,
       y: 30,
@@ -30,7 +29,6 @@ export default function Products({ products }) {
       },
     });
 
- 
     imagesRef.current.forEach((img, i) => {
       gsap.from(img, {
         opacity: 0,
@@ -45,7 +43,6 @@ export default function Products({ products }) {
       });
     });
 
-  
     gsap.to(btnRef.current, {
       scale: 1.05,
       repeat: -1,
@@ -57,8 +54,6 @@ export default function Products({ products }) {
 
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-10 sm:py-14">
-
-  
       <h1
         ref={titleRef}
         className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#002D69] mb-8 sm:mb-12 uppercase"
@@ -86,7 +81,6 @@ export default function Products({ products }) {
           VIEW GALLERY
         </button>
       </div>
-
     </section>
   );
 }
